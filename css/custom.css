@@ -1,9 +1,28 @@
 .color-header {
-    background-color: #fbad18;
+    background-color: #f6e80c;
 }
 
 .font-xilosa {
     font-family: "fonte";
+}
+
+.button-theme {
+    border-radius: 8%;
+    color: #5a220c;
+    border-color: #5a220c
+}
+
+.button-theme:hover {
+    border-radius: 8%;
+    color: #fff;
+    background-color: #5a220c;
+    border-color: #5a220c
+}
+
+.button-theme:disabled {
+    border-radius: 8%;
+    color: #5a220c;
+    background-color: #5f3b2c
 }
 
 .sujestoes_receitas {
@@ -12,10 +31,15 @@
     border-radius: 2%;
 }
 
-body {
-    background-image: url("img/plano_fundo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+.menu-height {
+    height: 50;
+}
+
+.border-style-2px {
+    margin: auto;
+    border: 2px;
+    border-color: grey;
+    border-radius: 2px;
 }
 
 @font-face {
