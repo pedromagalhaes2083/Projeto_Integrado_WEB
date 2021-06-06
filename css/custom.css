@@ -1,0 +1,35 @@
+.color-header {
+    background-color: #fbad18;
+}
+
+.font-xilosa {
+    font-family: "fonte";
+}
+
+.sujestoes_receitas {
+    border: 2px;
+    border-color: darkgrey;
+    border-radius: 2%;
+}
+
+body {
+    background-image: url("img/plano_fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@font-face {
+    font-family: 'fonte';
+    src: 'fonts/xilosa.ttf'/*Para navegadores Internet Explorer*/
+    ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fonte';
+    src: 'fonts/xilosa.ttf'/*Para os demais navegadores*/
+    ;
+    font-weight: normal;
+    font-style: normal;
+}
