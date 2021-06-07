@@ -1,3 +1,25 @@
+.button-theme {
+    border-radius: 8%;
+    color: #fff;
+    background-color: #5a220c;
+    border-color: #5a220c
+}
+
+.border-style-2px {
+    margin: auto;
+    border: 2px;
+    border-color: grey;
+    border-radius: 2px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.container-height {
+    height: auto;
+}
+
 .color-header {
     background-color: #f6e80c;
 }
@@ -6,40 +28,8 @@
     font-family: "fonte";
 }
 
-.button-theme {
-    border-radius: 8%;
-    color: #5a220c;
-    border-color: #5a220c
-}
-
-.button-theme:hover {
-    border-radius: 8%;
-    color: #fff;
-    background-color: #5a220c;
-    border-color: #5a220c
-}
-
-.button-theme:disabled {
-    border-radius: 8%;
-    color: #5a220c;
-    background-color: #5f3b2c
-}
-
-.sujestoes_receitas {
-    border: 2px;
-    border-color: darkgrey;
-    border-radius: 2%;
-}
-
-.menu-height {
-    height: 50;
-}
-
-.border-style-2px {
-    margin: auto;
-    border: 2px;
-    border-color: grey;
-    border-radius: 2px;
+.font-size-8pt {
+    font-size: 10pt;
 }
 
 @font-face {
@@ -57,3 +47,50 @@
     font-weight: normal;
     font-style: normal;
 }
+
+.img-user-suges {
+    margin: 5px;
+}
+
+.img-margin-0 {
+    margin: 0;
+}
+
+.padding-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.margin-left-4 {
+    margin-left: 4px;
+}
+
+.margin-4 {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+.margin-10 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu-height {
+    height: 50;
+}
+
+.text-color-grey {
+    color: darkslategrey;
+}
+
+.sujestoes_receitas {
+    border: 2px;
+    border-color: darkgrey;
+    border-radius: 2%;
+}
+
+.user-nome {}

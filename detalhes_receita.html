@@ -16,39 +16,35 @@
 <body class="body">
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- MENU -->
-    <header class="navbar navbar-expand-lg navbar-light color-header container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo_marca.png" alt="image" width="95" height="95">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        <div class="d-flex mx-auto order-0 flex-center">
+    <header class="navbar navbar-expand-lg navbar-light color-header container-fluid container-height">
+        <div>
+            <img src="img/logo_marca.png" alt="image" width="50" height="40">
+        </div>
+
+        <div class="d-flex mx-auto order-0 flex-center padding-0">
             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
             <button class="button-theme" type="submit">Search</button>
         </div>
-        <ul class="navbar-nav ml-auto ">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link " href="#">Início</a>
+                <b class="nav-link " href="#">Início</b>
             </li>
             <h3>/</h3>
             <li class="nav-item">
-                <a class="nav-link" href="#">Receitas</a>
+                <b class="nav-link" href="#">Receitas</b>
             </li>
         </ul>
         <div class="user d-flex justify-content-center align-items-center">
-
-            <img class="user-radius rounded-circle" src="img/logo_marca.png" alt="" width="85" height="85">
-
+            <img class="user-radius rounded-circle" src="img/logo_marca.png" alt="" width="50" height="45">
             <div class="d-flex flex-row justify-content-center align-items-center">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                   Usuário
-                                </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </b>
+                        <ul class="dropdown-menu 5" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="w-25"><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li class="w-25"><a class="dropdown-item" href="#">Sair</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,83 +59,80 @@
                 <div id="main" class="d-flex justify-content-start">
                     <div class="container-fluid">
                         <div class="video">
-                            <object width="950em" height="450em" data="https://www.youtube.com/embed/OqjV4l7nVnI"></object>
+                            <object width="950em" height="450em" data="https://www.youtube.com/embed/ytDfooFJGhc"></object>
                         </div>
                     </div>
                 </div>
             </article>
-
         </section>
         <!--SUGESTOES-->
-        <span class="border border border-dark rounded">
+        <span class="card">
         <aside>
             <article>
                 <nav class="d-flex flex-row  justify-content-center">
-                    <img src="img/sugestoes.png" alt="" height="60" width="60">
-                    <h3>Sujestões</h3>
-                    <img src="img/sugestoes.png" alt="" height="60" width="60">
+                    <img src="img/chapeu_74.png" alt="" height="60" width="60">
+                    <h3 class="margin-top-12 margin-4"> Comentários </h3>
+                    <img src="img/chapeu_74.png" alt="" height="60" width="60">
                 </nav>
             </article>
-           <div class="justify-content-end">
-                <article id="sugestao-1" class="d-flex flex-row mb-4">
-                    <div id="imgreceita" class="me-3">
-                        <img src="" height="80px" width="80px">
-                    </div>
-                    <div class="w-100 d-flex flex-row">
+           <div class="justify-content-end">           
+                <article id="sugestao-1" class="d-flex flex-row  margin-4">
+                    <div class="card d-flex flex-row">
+                        <div class="me-3">
+                            <img class= "img-user-suges"src="img/user_1.jpg" height="80px" width="80px">
+                        </div>
+                         <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
-                            <div id="usuario-nome">
-                                <p>sugestao-1</p>
+                            <div id="usuario-nome " class="d-flex">
+                                <b class="user-nome">João Vitor</b>
+                                <h6 class="m-1 font-size-8pt text-color-grey">@jotaveoo</h6>
                             </div>
-                            <div id="descricao">
-                                <p>(descrição do site)</p>
+                            <div id="descricao" class=" d-flex">
+                                <p>O site me parece bastante otimizado, afinal eu estava no meio ajudando</p>
                             </div>
+                        </div>                       
+                    </div>      
+                </article>    
+                <article id="sugestao-2" class="d-flex flex-row  margin-4">
+                    <div class="card w-100  d-flex flex-row">
+                        <div class="me-3">
+                            <img class= "img-user-suges"src="img/user_2.jpg" height="80px" width="80px">
                         </div>
-                        <div id="linkreceita" class="d-flex align-items-end">
-                            <a href="http://">Leia Mais</a>
-                        </div>
-                    </div>
-                </article>
-                <article id="sugestao-2" class="d-flex flex-row mb-4">
-                    <div id="imgreceita" class="me-3">
-                        <img src="" height="80px" width="80px">
-                    </div>
-                    <div class="w-100 d-flex flex-row">
+                         <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
-                            <div id="usuario-nome">
-                                <p>sugestao-2</p>
+                            <div id="usuario-nome" class="d-flex">
+                                <b class="user-nome">Jonatas Soares</b>
+                                <h5 class="m-1 font-size-8pt text-color-grey">@fnx_jonatas</h5>
                             </div>
-                            <div id="descricao">
-                                <p>(descrição do site)</p>
+                            <div id="descricao" class=" d-flex">
+                                <p>@jotaveo eu não estou na equipe, mas foi um enorme prazer ajudar-los</p>
                             </div>
-                        </div>
-                        <div id="linkreceita" class="d-flex align-items-end">
-                            <a href="http://">Leia Mais</a>
-                        </div>
-                    </div>
+                        </div>                       
+                    </div>      
                 </article>
-                <article id="sugestao-3" class="d-flex flex-row mb-4">
-                    <div id="imgreceita" class="me-3">
-                        <img src="" height="80px" width="80px">
-                    </div>
-                    <div class="w-100 d-flex flex-row">
+                <article id="sugestao-3" class="d-flex flex-row  margin-4">
+                    <div class="card w-100  d-flex flex-row">
+                        <div class="me-3">
+                            <img class= "img-user-suges"src="img/user_3.jpg" height="80px" width="80px">
+                        </div>
+                         <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
-                            <div id="usuario-nome">
-                                <p>sugestao-3</p>
+                            <div id="usuario-nome" class="d-flex">
+                                <b class="user-nome">Jonatas Soares</b>
+                                <h5 class="m-1 font-size-8pt text-color-grey">@fnx_jonatas</h5>
                             </div>
-                            <div id="descricao">
-                                <p>(descrição do site)</p>
+                            <div id="descricao" class=" d-flex">
+                                <p>@Manuibr vlw aew mano!</p>
                             </div>
-                        </div>
-                        <div id="linkreceita" class="d-flex align-items-end">
-                            <a href="http://">Leia Mais</a>
-                        </div>
-                    </div>
+                        </div>                       
+                    </div>      
                 </article>
+                <!--ENVIAR SUGESTÃO-->
                 <div>
-                    <div id="search-nav" class="h-100 d-flex flex-column bg-light">
-                        <form class="d-flex w-100">
+                    <div id="search-nav" class="h-100 d-flex flex-column bg-light margin-10">
+                        <form class="d-flex w-100 mb-2">
                             <input class="form-control w-75 me-2" type="text">
-                            <button class="btn btn-outline-success w-50" type="submit">Comentar</button>
+                            <button class="button-theme w-50" type="submit">Comentar</button>
                         </form>
                     </div>
                 </div>
@@ -165,6 +158,12 @@
                 <div>
                     O baião de dois, prato que deu nome ao restaurante baião brasil é uma comida n
                 </div>
+
+            </div>
+            <div class="mx-auto order-2 flex-center">
+                <div>
+                    <h3>Detalhes:</h3>
+                </div>
                 <div>
                     <b>Preparo:</b>
                 </div>
@@ -175,133 +174,65 @@
                     <b>Rendimento:</b>
                 </div>
             </div>
-            <div class="mx-auto order-2 flex-center">
-                <div>
-                    <h3>Ingredientes:</h3>
-                </div>
-                <div>
-                    <ol>
-                        <li>Salsa</li>
-                        <li>Cebolinha</li>
-                    </ol>
-                </div>
-            </div>
-
-
         </section>
-        <section class="d-flex receita align-items-center p-2">
 
-            <nav>
-                <div class="border-style-2px">
+        <section class="d-flex">
+            <article class="d-flex flex-row  margin-4">
+                <div class="card d-flex flex-row margin-4">
                     <div>
-                        <h2>Passo-a-Passo</h2>
+                        <div class="flex-column margin-10">
+                            <div class="d-flex">
+                                <img src="img/chapeu_74.png" alt="">
+                                <h2 class="margin-top-12 margin-left-4">Passo-a-Passo</h2>
+                            </div>
+                            <div>
+                                Essa receita deve ser preparada com horas de antecedencia
+                            </div>
+                            <div>
+                                <b>Passo 1:</b>
+                            </div>
+                            <div>
+                                <b>Passo 2:</b>
+                            </div>
+                            <div>
+                                <b>Passo 3:</b>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        Essa receita deve ser preparada com horas de antecedencia
-                    </div>
-                    <div>
-                        <b>Passo 1:</b>
-                    </div>
-                    <div>
-                        <b>Passo 2:</b>
-                    </div>
-                    <div>
-                        <b>Passo 3:</b>
-                    </div>
-                </div>
-            </nav>
-            <div class="mx-auto order-2 flex-center">
-                <article>
-                    <nav class="d-flex flex-row  justify-content-center">
-                        <img src="img/sugestoes.png" alt="" height="60" width="60">
-                        <h3>Comentarios</h3>
-                        <img src="img/sugestoes.png" alt="" height="60" width="60">
-                    </nav>
+            </article>
+            <!--COMENTARIOS-->
+            <span class="card">
+            <aside>
+                <article class="d-flex flex-row  margin-4">
+                    <div class=" d-flex flex-row margin-4">
+                        <div>
+                            <div class="flex-column margin-10">
+                                <div class="d-flex">
+                                    <img src="img/chapeu_74.png" alt="">
+                                    <h2 class="margin-top-12 margin-left-4">Ingredientes</h2>
+                                </div>
+                                <div>
+                                    Essa receita deve ser preparada com horas de antecedencia
+                                </div>
+                                <div>
+                                    <b>Passo 1:</b>
+                                </div>
+                                <div>
+                                    <b>Passo 2:</b>
+                                </div>
+                                <div>
+                                    <b>Passo 3:</b>
+                                </div>
+                            </div>
+                        </div>
                 </article>
-                <div>
-                    <article id="sugestao-1" class="d-flex flex-row mb-4">
-                        <div id="imgreceita" class="me-3">
-                            <img src="" height="80px" width="80px">
-                        </div>
-                        <div class="w-100 d-flex flex-row">
-                            <div class="d-flex flex-column">
-                                <div id="receita-nome">
-                                    <p>Receita 03</p>
-                                </div>
-                                <div id="descricao">
-                                    <p>(descrição da Receita)</p>
-                                </div>
-                            </div>
-                            <div id="linkreceita" class="d-flex align-items-end">
-                                <a href="http://">Leia Mais</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article id="sugestao-2" class="d-flex flex-row mb-4">
-                        <div id="imgreceita" class="me-3">
-                            <img src="" height="80px" width="80px">
-                        </div>
-                        <div class="w-100 d-flex flex-row">
-                            <div class="d-flex flex-column">
-                                <div id="receita-nome">
-                                    <p>Receita 03</p>
-                                </div>
-                                <div id="descricao">
-                                    <p>(descrição da Receita)</p>
-                                </div>
-                            </div>
-                            <div id="linkreceita" class="d-flex align-items-end">
-                                <a href="http://">Leia Mais</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article id="sugestao-3" class="d-flex flex-row mb-4">
-                        <div id="imgreceita" class="me-3">
-                            <img src="" height="80px" width="80px">
-                        </div>
-                        <div class="w-100 d-flex flex-row">
-                            <div class="d-flex flex-column">
-                                <div id="receita-nome">
-                                    <p>Receita 03</p>
-                                </div>
-                                <div id="descricao">
-                                    <p>(descrição da Receita)</p>
-                                </div>
-                            </div>
-                            <div id="linkreceita" class="d-flex align-items-end">
-                                <a href="http://">Leia Mais</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article id="sugestao-3" class="d-flex flex-row mb-4">
-                        <div id="imgreceita" class="me-3">
-                            <img src="" height="80px" width="80px">
-                        </div>
-                        <div class="w-100 d-flex flex-row">
-                            <div class="d-flex flex-column">
-                                <div id="receita-nome">
-                                    <p>Receita 03</p>
-                                </div>
-                                <div id="descricao">
-                                    <p>(descrição da Receita)</p>
-                                </div>
-                            </div>
-                            <div id="linkreceita" class="d-flex align-items-end">
-                                <a href="http://">Leia Mais</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            </aside>
+            </span>
+    </nav>
+    </section>
 
-
-        </section>
 
     </nav>
-
-
-
-
 </body>
 
 </html>
