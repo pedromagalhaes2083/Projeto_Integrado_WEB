@@ -23,15 +23,15 @@
 
         <div class="d-flex mx-auto order-0 flex-center padding-0">
             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="button-theme" type="submit">Search</button>
+            <button class="button-theme" type="submit">Buscar</button>
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <b class="nav-link " href="#">Início</b>
+                <a class="nav-link " href="Index.html">Início</a>
             </li>
             <h3>/</h3>
             <li class="nav-item">
-                <b class="nav-link" href="#">Receitas</b>
+                <a class="nav-link" href="Receitas.html">Receitas</a>
             </li>
         </ul>
         <div class="user d-flex justify-content-center align-items-center">
@@ -59,7 +59,7 @@
                 <div id="main" class="d-flex justify-content-start">
                     <div class="container-fluid">
                         <div class="video">
-                            <object width="950em" height="450em" data="https://www.youtube.com/embed/ytDfooFJGhc"></object>
+                            <object width="950em" height="450em" data="https://www.youtube.com/embed/PRZ7Tazicp8"></object>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                 <article id="sugestao-1" class="d-flex flex-row  margin-4">
                     <div class="card d-flex flex-row">
                         <div class="me-3">
-                            <img class= "img-user-suges"src="img/user_1.jpg" height="80px" width="80px">
+                            <img class= "img-user-suges"src="img/colaboradores/joao_vitor.jpg" height="80px" width="80px">
                         </div>
                          <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
@@ -87,8 +87,8 @@
                                 <b class="user-nome">João Vitor</b>
                                 <h6 class="m-1 font-size-8pt text-color-grey">@jotaveoo</h6>
                             </div>
-                            <div id="descricao" class=" d-flex">
-                                <p>O site me parece bastante otimizado, afinal eu estava no meio ajudando</p>
+                            <div id="descricao" class=" d-flex">                           
+                                <p>Fiz aqui em casa em um domingo, foi sucesso!! Muito boa mesmo!</p>
                             </div>
                         </div>                       
                     </div>      
@@ -96,16 +96,16 @@
                 <article id="sugestao-2" class="d-flex flex-row  margin-4">
                     <div class="card w-100  d-flex flex-row">
                         <div class="me-3">
-                            <img class= "img-user-suges"src="img/user_2.jpg" height="80px" width="80px">
+                            <img class= "img-user-suges"src="img/publico/emanuel.jpg" height="80px" width="80px">
                         </div>
                          <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
                             <div id="usuario-nome" class="d-flex">
-                                <b class="user-nome">Jonatas Soares</b>
-                                <h5 class="m-1 font-size-8pt text-color-grey">@fnx_jonatas</h5>
+                                <b class="user-nome">Emanuel Pinheiro</b>
+                                <h5 class="m-1 font-size-8pt text-color-grey">@Manuibr</h5>
                             </div>
                             <div id="descricao" class=" d-flex">
-                                <p>@jotaveo eu não estou na equipe, mas foi um enorme prazer ajudar-los</p>
+                                <p>Realmente muito boa, não deu pra quem quis aqui @jotaveoo</p>
                             </div>
                         </div>                       
                     </div>      
@@ -113,7 +113,7 @@
                 <article id="sugestao-3" class="d-flex flex-row  margin-4">
                     <div class="card w-100  d-flex flex-row">
                         <div class="me-3">
-                            <img class= "img-user-suges"src="img/user_3.jpg" height="80px" width="80px">
+                            <img class= "img-user-suges"src="img/colaboradores/jonatas.jpg" height="80px" width="80px">
                         </div>
                          <div class="w-100 d-flex flex-row">
                         <div class="d-flex flex-column">
@@ -122,7 +122,7 @@
                                 <h5 class="m-1 font-size-8pt text-color-grey">@fnx_jonatas</h5>
                             </div>
                             <div id="descricao" class=" d-flex">
-                                <p>@Manuibr vlw aew mano!</p>
+                                <p>Vou fazer esse domingo em! Comemorar o final do trabalho de PWEB @jotaveoo @Manuibr</p>
                             </div>
                         </div>                       
                     </div>      
@@ -146,17 +146,17 @@
         <!--DESCRICAO DA RECEITA-->
         <section class="d-flex receita color-header align-items-center p-2">
             <div class="imagem_receita">
-                <img src="img/logo_marca.png" alt="" height="215" width="215">
+                <img class="border-2" src="img/receitas/cuzcuz.jpg" alt="" height="210" width="210">
             </div>
-            <div class="informacoes">
+            <div class="margin-left-10">
                 <div>
                     <img src="img/classificacao.png" alt="" height="40" width="200">
                 </div>
                 <div>
-                    <h2>Nome da Receita</h2>
+                    <h2><b>FAROFA DE CUSCUZ COMPLETA</b></h2>
                 </div>
-                <div>
-                    O baião de dois, prato que deu nome ao restaurante baião brasil é uma comida n
+                <div class="wf-600">
+                    Uma farofa de cuscuz com carne de sol, linguiça nordestina, bacon, queijo coalho e outros ingredientes para deixar o prato irresistível
                 </div>
 
             </div>
@@ -168,15 +168,12 @@
                     <b>Preparo:</b>
                 </div>
                 <div>
-                    <b>Cozimento:</b>
-                </div>
-                <div>
                     <b>Rendimento:</b>
                 </div>
             </div>
         </section>
-
         <section class="d-flex">
+            <!--PASSO-A-PASSO-->
             <article class="d-flex flex-row  margin-4">
                 <div class="card d-flex flex-row margin-4">
                     <div>
@@ -186,16 +183,43 @@
                                 <h2 class="margin-top-12 margin-left-4">Passo-a-Passo</h2>
                             </div>
                             <div>
-                                Essa receita deve ser preparada com horas de antecedencia
-                            </div>
-                            <div>
-                                <b>Passo 1:</b>
+                                <b>Passo 1:</b> <a> A farinha com sal e hidrate-a com água filtrada gelada (para cada 100g de farinha, utilize 50ml de água).  Leve à geladeira por 4 horas.</a>
                             </div>
                             <div>
                                 <b>Passo 2:</b>
+                                <a></a> Após as 4 horas, bote a farinha na cuscuzeira com 500ml de água na parte inferior. Tampe e deixe no fogo médio por 15 a 20 minutos (caso não tenha cuscuzeira, pode usar escorredor de macarrão).</a>
                             </div>
                             <div>
                                 <b>Passo 3:</b>
+                                <a></a> Fatie as carnes em cortes diferentes; deixe pedaços grandes. Corte o queijo coalho em quadrados e sele-os na frigideira. Conserve.</a>
+                            </div>
+                            <div>
+                                <b>Passo 4: </b>
+                                <a></a>Salteie as carnes com manteiga de garrafa na seguinte ordem</a>
+                            </div>
+                            <div>
+                                <b>Passo 5: </b>
+                                <a></a>Carne de Sol</a>
+                            </div>
+                            <div>
+                                <b>Passo 6:</b>
+                                <a></a> Linguiça</a>
+                            </div>
+                            <div>
+                                <b>Passo 7: </b>
+                                <a></a>Bacon</a>
+                            </div>
+                            <div>
+                                <b>Passo 8: </b>
+                                <a></a>Quando as carnes estiverem caramelizadas, mas não bem-passadas, adicione cebola e alho picados. Bata 5 ovos e jogue-os na frigideira. Mexa bem.</a>
+                            </div>
+                            <div>
+                                <b>Passo 9:</b>
+                                <a></a> Tire a farinha da cuscuzeira e jogue-a na frigideira. Misture e acrescente um fio de manteiga de garrafa. Corte as ervas e adicione-as à frigideira. Misture.</a>
+                            </div>
+                            <div>
+                                <b>Passo 10:</b>
+                                <a></a> Volte com o queijo coalho e finalize com uma porção generosa de manteiga de garrafa.</a>
                             </div>
                         </div>
                     </div>
@@ -205,33 +229,53 @@
             <aside>
                 <article class="d-flex flex-row  margin-4">
                     <div class=" d-flex flex-row margin-4">
-                        <div>
-                            <div class="flex-column margin-10">
+                            <div class="flex-column  margin-4  wf-426">
                                 <div class="d-flex">
                                     <img src="img/chapeu_74.png" alt="">
                                     <h2 class="margin-top-12 margin-left-4">Ingredientes</h2>
+                                </div>                             
+                                <div>
+                                    <b>300g de farinha de milho flocada</b>
                                 </div>
                                 <div>
-                                    Essa receita deve ser preparada com horas de antecedencia
+                                    <b>300g de bacon</b>
                                 </div>
                                 <div>
-                                    <b>Passo 1:</b>
+                                    <b>100g de linguiça mineira</b>
                                 </div>
                                 <div>
-                                    <b>Passo 2:</b>
+                                    <b>100g de linguiça nordestina</b>
                                 </div>
                                 <div>
-                                    <b>Passo 3:</b>
+                                    <b>400g de carne de sol dessalgada</b>
                                 </div>
-                            </div>
-                        </div>
+                                <div>
+                                    <b>50ml de manteiga de garrafa</b>
+                                </div>
+                                <div>
+                                    <b>5 ovos</b>
+                                </div>
+                                <div>
+                                    <b>3-5 dentes de alho</b>
+                                </div>
+                                <div>
+                                    <b>1 cebola média</b>
+                                </div>
+                                <div>
+                                    <b>Ceboulette</b>
+                                </div>
+                                <div>
+                                    <b>Salsinha</b>
+                                </div>
+                                <div>
+                                    <b>Coentro</b>
+                                </div>
+                            </div>   
+                        </div>                          
                 </article>
             </aside>
             </span>
-    </nav>
-    </section>
-
-
+        </section>
     </nav>
 </body>
 
