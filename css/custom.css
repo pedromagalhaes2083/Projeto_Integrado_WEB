@@ -60,6 +60,10 @@ body {
     height: 144;
 }
 
+.hpx228 {
+    height: 228;
+}
+
 .img-user-suges {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -133,6 +137,10 @@ li {
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+.position-60 {
+    position: relative;
 }
 
 .page-link {

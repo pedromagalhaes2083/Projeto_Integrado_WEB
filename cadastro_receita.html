@@ -65,124 +65,171 @@
         <div class="margin-10">
             <section class="h-100 w-100 d-flex flex-row">
                 <!--INFORMACOES-->
-                <div class="d-flex align-items-center w-75">
-                    <!--FOTO-->
-                    <div class="imagem_cadastro p-1 margin-right-10">
-                        <div class="margin-left-4">
-                            <img src="img/logo_marca.png" height="150" width="150">
-                        </div>
-                        <div class="p-1 ">
-                            <button class="button-theme w-150 p-1 text-center" type="submit">Anexar imagem</button>
-                        </div>
-                    </div>
-                    <!--NOME/DESC-->
-                    <div>
-                        <div>
-                            <b>Título</b>
-                            <div class="mb-3">
-                                <input type="text" class="text-break w-100">
+                <section>
+                    <div class="d-flex  w-75">
+                        <!--FOTO-->
+                        <div class="imagem_cadastro p-1 margin-right-10">
+                            <div class="margin-left-4">
+                                <img src="img/logo_marca.png" height="150" width="150">
+                            </div>
+                            <div class="p-1 ">
+                                <button class="button-theme w-150 p-1 text-center" type="submit">Anexar imagem</button>
                             </div>
                         </div>
+                        <!--NOME/DESC-->
                         <div>
                             <div>
-                                <b>Descrição da Receita</b>
+                                <b>Título</b>
+                                <div class="mb-3">
+                                    <input type="text" class="text-break w-100">
+                                </div>
                             </div>
-                            <div class="mb-3 wpx-450">
-                                <textarea class="form-control wf-600 hpx144 " id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div>
+                                <div>
+                                    <b>Descrição da Receita</b>
+                                </div>
+                                <div class="mb-3 wpx-450">
+                                    <textarea class="form-control wf-600 hpx144 " id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div>
+                        <!--PASSO-A-PASSO-->
+                        <div class=" p-1 w-25">
+                            <div class="add_passos w-100 d-flex flex-row align-items-center">
+                                <h3>Passos</h3>
+                                <button onclick="newElement_Passos()" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
+                            </div>
+                            <!--CAMPOS-->
+                            <ul id="list_passos" class="mt-2  wf-600  mb-3">
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                                <li class="d-flex align-items-center mb-3 ">
+                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                                    <input type="text" class="text-break wf-600 ">
+                                </li>
+                            </ul>
+                            <script>
+                                // CRIAR NOVO ITEM
+                                function newElement_Passos() {
+                                    var li = document.createElement("li");
+                                    var btn = document.createElement("button")
+                                    var ipt = document.createElement("input");
+                                    li.className = "d-flex align-items-center mb-3";
+                                    btn.className = "btn button-theme ms-2 margin-right-4";
+                                    ipt.className = "text-break wf-600";
+
+                                    var txt = document.createTextNode("X");
+                                    btn.appendChild(txt)
+                                    li.appendChild(btn);
+                                    li.appendChild(ipt);
+
+                                    document.getElementById("list_passos").appendChild(li);
+
+                                    for (i = 0; i < close.length; i++) {
+                                        btn[i].onclick = function() {
+                                            var div = this.parentElement;
+                                            div.style.display = "none";
+                                        }
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                </section>
                 <!--INGREDIENTES-->
-                <div class="cadastro_ingredientes w-25 text-start margin-top-12">
-                    <div class="aba_ingredientes w-100 d-flex flex-row align-items-center">
+                <aside class="cadastro_ingredientes w-25 text-start margin-top-12 margin-left-10">
+                    <div class="add_ingredientes w-100 d-flex flex-row align-items-center margin-left-10">
                         <h3>Ingredientes</h3>
-                        <button id="add-ingredient" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
+                        <button onclick="newElement_Ingredientes()" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
                     </div>
                     <!--CAMPOS-->
+                    <ul id="list_itens" class="mt-2 mb-3">
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
+                            <input type="text" class="text-break w-100 ">
+                        </li>
+                    </ul>
+                    <script>
+                        // NÃO CONSEGUI TERMINRAR
+                        var close = document.getElementsById("remove-ingrediente");
+                        var i;
+                        for (i = 0; i < close.length; i++) {
+                            close[i].onclick = function() {
+                                var div = this.parentElement;
+                                div.style.display = "none";
+                            }
+                        }
 
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row mt-2 ">
-                        <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                        <div id="ingredient-name " class="d-flex align-items-center  ">
-                            <input type="text" class="text-break w-100 ">
-                        </div>
-                    </div>
-                </div>
+                        // CRIAR NOVO ITEM
+                        function newElement_Ingredientes() {
+                            var li = document.createElement("li");
+                            var btn = document.createElement("button")
+                            var ipt = document.createElement("input");
+                            li.className = "d-flex align-items-center mb-3";
+                            btn.className = "btn button-theme ms-2  margin-right-4";
+                            btn.onclick = "removeElement_Ingredientes()";
+                            btn.id = "remove-ingrediente";
+                            ipt.className = "text-break w-100";
+
+                            var txt = document.createTextNode("X");
+                            btn.appendChild(txt)
+                            li.appendChild(btn);
+                            li.appendChild(ipt);
+
+                            document.getElementById("list_itens").appendChild(li);
+
+                            for (i = 0; i < close.length; i++) {
+                                close[i].onclick = function() {
+                                    var div = this.parentElement;
+                                    div.style.display = "none";
+                                }
+                            }
+                        }
+                    </script>
+                </aside>
             </section>
-            <!--PASSO-A-PASSO-->
-            <div class=" p-1 w-25">
-                <div class="passos w-100 d-flex flex-row align-items-center">
-                    <h3>Passos</h3>
-                    <button id="add-ingredient" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
-                </div>
-                <!--CAMPOS-->
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-                <div class="d-flex flex-row mt-2 ">
-                    <button id="remove-ingredient" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                    <div id="ingredient-name " class="d-flex align-items-center  ">
-                        <input type="text" class="text-break wf-600 ">
-                    </div>
-                </div>
-            </div>
+
         </div>
         <div class="p-1 justify-content-end d-flex flex-row">
             <button class="button-theme w-150 p-1 text-center" type="submit">Finalizar Cadastro</button>
