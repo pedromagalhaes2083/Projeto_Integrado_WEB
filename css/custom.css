@@ -1,3 +1,17 @@
+a,
+h5,
+button,
+h1,
+h2,
+h3 {
+    font-family: "xilosa";
+}
+
+.baaa {
+    height: 100px;
+    width: 100px;
+}
+
 .button-theme {
     border-radius: .25rem;
     color: #fff;
@@ -13,7 +27,10 @@
 }
 
 body {
-    background: "img/plano_fundo.jpg";
+    background-image: url('img/plano_fundo.jpg');
+    background-color: #ffffff;
+    background-position: center;
+    background-size: contain;
 }
 
 .card {
@@ -26,6 +43,9 @@ body {
 
 .color-header {
     background-color: #f6e60cd0;
+    background-image: url('img/barra_sup.jpg');
+    background-position: center;
+    background-size: contain;
 }
 
 .font-xilosa {
@@ -37,16 +57,8 @@ body {
 }
 
 @font-face {
-    font-family: 'fonte';
-    src: 'fonts/xilosa.ttf'/*Para navegadores Internet Explorer*/
-    ;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'fonte';
-    src: 'fonts/xilosa.ttf'/*Para os demais navegadores*/
+    font-family: 'xilosa';
+    src: '/fonts/xilosa.ttf'/*Para navegadores Internet Explorer*/
     ;
     font-weight: normal;
     font-style: normal;
@@ -173,4 +185,52 @@ li {
 
 .wf-600 {
     width: 600px;
+}
+
+
+/* ---- ESTRELAS - CLASSIFICAÇÃO ---- */
+
+
+.estrelas-class {
+    text-align:left;
+    font-family: 'awesome';
+}
+
+.estrelas-class input[type=radio] {
+    display: none;
+}
+
+.estrelas-class label i.fa {
+    font-size: 2.5em
+}
+
+.estrelas-class label i.fa:before {
+    content: '★';
+    color: rgb(230, 89, 46);
+}
+
+.estrelas-class input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
+}
+
+.estrelas {
+    text-align: center;
+    font-family: 'awesome';
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa {
+    font-size: 2.5em
+}
+
+.estrelas label i.fa:before {
+    content: '★';
+    color: #FC0;
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
 }

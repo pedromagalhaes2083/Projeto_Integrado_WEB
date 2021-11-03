@@ -10,7 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <title> DeCumê</title>
+    <title> Página Inicial </title>
 </head>
 
 <body>
@@ -24,33 +24,40 @@
             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
             <button class="button-theme" type="submit">Buscar</button>
         </div>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link " href="index.html">Início</a>
-            </li>
-            <h3>/</h3>
-            <li class="nav-item">
-                <a class="nav-link" href="receitas.html">Receitas</a>
-            </li>
-        </ul>
-        <div class="user d-flex justify-content-center align-items-center">
-            <img class="user-radius rounded-circle" src="img/colaboradores/simao_pedro.jpg" alt="" width="50" height="45">
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <b class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                  Usuário
-                        </b>
-                        <ul class="dropdown-menu 5" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="w-25"><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li class="w-25"><a class="dropdown-item" href="#">Sair</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+        <button class="button-theme me-2" onclick="window.location.href = 'main_page.html'" type="submit">Main</button>
+        <button class="button-theme me-2" onclick="window.location.href = 'index.html'" type="submit">Home</button>
+        <button class="button-theme me-2" onclick="window.location.href = 'receitas.html'" type="submit">Receitas</button>
+        <button class="button-theme me-2" onclick="window.location.href = 'funcao_desenvolvimento.html'">Pedido</button>
+        <button class="button-theme me-2" onclick="window.location.href = 'login.html'" type="submit">Login</button>
+    
+        <img class="user-radius rounded-circle" src="img/colaboradores/simao_pedro.jpg" alt="" width="50" height="45">
+       
     </header>
     <!--CORPO-->
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner seja bem vindo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <section class="card margin-10">
 
@@ -65,7 +72,7 @@
         <!--CANJICA SALGADA COM CALABRESA-->
         <article class="justify-content-center d-flex flex-row">
             <div class="card margin-10 " style="width: 18rem;">
-                <img src="img/receitas/canjica_salgada.jpg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/canjica_salgada.jpg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>CANJICA SALGADA COM CALABRESA</b></h5>
                     <p class="card-text">Uma canjica diferenciada e muito saborosa, fácil e rápido de se preparar, porém apesar de sua simplicidade esse plato é uma explosão de sabor!</p>
@@ -76,7 +83,7 @@
             </div>
             <!--ESCONDIDINHO DE CHARQUE NORDESTINO-->
             <div class="card margin-10 " style="width: 18rem;">
-                <img src="img/receitas/escondidinho_charque.jpg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/escondidinho_charque.jpg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>ESCONDIDINHO DE CHARQUE NORDESTINO</b></h5>
                     <p class="card-text">Uma escondidinho pra lá de delicioso, com um recheio delicioso e bastante caprichado!</p>
@@ -87,7 +94,7 @@
             </div>
             <!--FRANDO AO CREME DE MILHO-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/frango_creme.jpeg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/frango_creme.jpeg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>FRANGO AO CREME DE MILHO</b></h5>
                     <p class="card-text">Um delioso recheio de frango encoberto de queijo. Com um aroma fenomenal e uma experiência extremamente saborosa.</p>
@@ -98,7 +105,7 @@
             </div>
             <!--CANJA DO NORDESTE-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/canja_nordeste.jpg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/canja_nordeste.jpg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>CANJA DO NORDESTE</b></h5>
                     <p class="card-text">Uma canja ótima para os dias corridos pois além de ser extremamente saborosa ela pode ser preparada em apenas 15 min.</p>
@@ -119,7 +126,7 @@
         <article class="justify-content-center d-flex flex-row">
             <!--FRANDO AO CREME DE MILHO-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/frango_creme.jpeg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/frango_creme.jpeg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>FRANGO AO CREME DE MILHO</b></h5>
                     <p class="card-text">Um delioso recheio de frango encoberto de queijo. Com um aroma fenomenal e uma experiência extremamente saborosa.</p>
@@ -130,7 +137,7 @@
             </div>
             <!--ESCONDIDINHO DE CHARQUE NORDESTINO-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/escondidinho_charque.jpg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/escondidinho_charque.jpg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>ESCONDIDINHO DE CHARQUE NORDESTINO</b></h5>
                     <p class="card-text">Uma escondidinho pra lá de delicioso, com um recheio delicioso e bastante caprichado!</p>
@@ -141,7 +148,7 @@
             </div>
             <!--MOQUECA DE CAJU-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/moqueca_caju.jpg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/moqueca_caju.jpg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"><b>MOQUECA DE CAJU</b></h5>
                     <p class="card-text">O caju tem uma textura firme e ligeiramente esponjosa, que depois de ser esmagado e extraído o suco é possível temperar essa fibra.</p>
@@ -152,7 +159,7 @@
             </div>
             <!--CURAU DE MILHO-->
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/receitas/curau_milho.jpeg" class="card-img-top hpx228" alt="...">
+                <img src="img/receitas/curau_milho.jpeg" class="card-img-top hpx228" alt="..." height="242" width="286">
                 <div class="card-body">
                     <h5 class="card-title"> <b>CURAU DE MILHO</b></h5>
                     <p class="card-text">Um prato simples e de fácil execução, mas extremamamente saboro ótimo para servir para visitas pois é um ótimo acompanhamento.</p>
@@ -172,15 +179,15 @@
         </article>
         <article class="justify-content-center d-flex flex-row">
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/pedro_paulo.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pedro Paulo</h5>
-                    <p class="card-text text-color-grey"><b>Idealizador de Conteúdo</b></p>
+                <img src="img/colaboradores/pedro_paulo.jpeg" class="card-img-top" alt="..." height="288" width="286">
+                <div class=" card-body ">
+                    <h5 class="card-title ">Pedro Paulo</h5>
+                    <p class="card-text text-color-grey "><b>Idealizador de Conteúdo</b></p>
                     <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
                 </div>
             </div>
-            <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/mayara.jpg" class="card-img-top" alt="...">
+            <div class="card margin-10 " style="width: 18rem; ">
+                <img src="img/colaboradores/mayara.jpg " class="card-img-top " alt="... " height="288 " width="286">
                 <div class="card-body">
                     <h5 class="card-title">Mayara Irineu</h5>
                     <p class="card-text text-color-grey"><b>Engenheira</b></p>
@@ -188,25 +195,25 @@
                 </div>
             </div>
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/jonatas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Jonatas Soares</h5>
-                    <p class="card-text text-color-grey"><b>Designer</b></p>
+                <img src="img/colaboradores/jonatas.jpg" class="card-img-top" alt="..." height="288" width="286">
+                <div class=" card-body ">
+                    <h5 class="card-title ">Jonatas Soares</h5>
+                    <p class="card-text text-color-grey "><b>Designer</b></p>
                     <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
                 </div>
             </div>
-            <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/sarah_eviny.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sarah Eviny</h5>
-                    <p class="card-text text-color-grey"><b>Idealizadora de Conteúdo/Designer</b></p>
+            <div class="card margin-10 " style="width: 18rem; ">
+                <img src="img/colaboradores/sarah_eviny.jpg " class="card-img-top " alt="... " height="288 " width="286 ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Sarah Eviny</h5>
+                    <p class="card-text text-color-grey "><b>Idealizadora de Conteúdo/Designer</b></p>
                     <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
                 </div>
             </div>
         </article>
-        <article class="justify-content-center d-flex flex-row">
-            <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/simao_pedro.jpg" class="card-img-top" alt="...">
+        <article class="justify-content-center d-flex flex-row ">
+            <div class="card margin-10 " style="width: 18rem; ">
+                <img src="img/colaboradores/simao_pedro.jpg " class="card-img-top " alt="... " height="288 " width="286">
                 <div class="card-body">
                     <h5 class="card-title">Simão Pedro</h5>
                     <p class="card-text text-color-grey"><b>Programador</b></p>
@@ -215,12 +222,12 @@
                 </div>
             </div>
             <div class="card margin-10" style="width: 18rem;">
-                <img src="img/colaboradores/joao_vitor.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">João Vitor</h5>
-                    <p class="card-text text-color-grey"><b>Programador</b></p>
+                <img src="img/colaboradores/joao_vitor.jpg" class="card-img-top" alt="..." height="288" width="286">
+                <div class=" card-body ">
+                    <h5 class="card-title ">João Vitor</h5>
+                    <p class="card-text text-color-grey "><b>Programador</b></p>
                     <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
-                    <p>"Ser intenso é a minha maior força e ao mesmo tempo, a minha maior fraqueza"</p>
+                    <p>"Ser intenso é a minha maior força e ao mesmo tempo, a minha maior fraqueza "</p>
                 </div>
             </div>
         </article>

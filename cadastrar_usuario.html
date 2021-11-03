@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/cadastro.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,45 +34,33 @@
     <div id="formContent">
     <!-- Tabs Titles -->
 
-    <!-- Icon 
+    <!-- Icone
       <div class="fadeIn first">
-        <img src="logo1.png" id="icon" alt="User Icon" />
+        <img src="" id="icon" alt="User Icon" />
       </div> -->
 
-      <!--Text -->
+    <!-- Texto -->
       <div>
         <br>
         <h2>
-          Login
+          Cadastro
         </h2>
-      </div> 
+      </div>
 
+    <br> 
 
-         <br> 
-
- 
-    <!-- Login Form -->
+    <!-- Forma do Login -->
       <form>
+        <input type="text" id="Usuario" class="fadeIn second" name="Usuario" placeholder="Usuário" required>
         <input type="text" id="Email" class="fadeIn second" name="Email" placeholder="Email" required>
         <input type="text" id="Senha" class="fadeIn third" name="Senha" placeholder="Senha" required>
+        <input type="text" id="Repetir Senha" class="fadeIn third" name="Repetir Senha" placeholder="Repetir Senha" required>
         <br>
         <br>
-        <input type="submit" class="fadeIn fourth" value="Entrar"  href="mudar_senha.html" >
+        <a href="/"> <input type="submit" class="fadeIn fourth" value="Cadastrar"> </a>
      </form>
 
-    <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="esqueci_usuario.html">Esqueceu sua senha?</a>
-        <br>
-        <a class="underlineHover" href="#">Cadastra-se</a>
-      </div>
-    </div>
-
   </div>
-
-
-
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

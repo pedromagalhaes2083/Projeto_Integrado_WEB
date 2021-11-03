@@ -10,20 +10,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <title> DeCumê</title>
+    <title> Cadastro de Receitas </title>
 </head>
 
 <body>
+
     <!-- MENU -->
     <header class="navbar navbar-expand-lg navbar-light color-header container-fluid container-height">
+
+        <!-- ICONE -->
         <div>
             <img src="img/logo_marca.png" alt="image" width="70" height="40">
         </div>
 
+        <!-- BARRA DE PESQUISA -->
         <div class="d-flex mx-auto order-0 flex-center padding-0">
             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
             <button class="button-theme" type="submit">Buscar</button>
         </div>
+
+        <!-- NAVEGAÇÂO -->
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link " href="index.html">Início</a>
@@ -32,7 +38,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="receitas.html">Receitas</a>
             </li>
+            <h3>/</h3>
+            <li class="nav-item">
+                <a class="nav-link" href="receitas.html">Cadastro</a>
+            </li>
         </ul>
+
+        <!-- USUARIO -->
         <div class="user d-flex justify-content-center align-items-center">
             <img class="user-radius rounded-circle" src="img/colaboradores/simao_pedro.jpg" alt="" width="50" height="45">
             <div class="d-flex flex-row justify-content-center align-items-center">
@@ -50,9 +62,35 @@
             </div>
         </div>
     </header>
+
     <!--CORPO-->
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner cad.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!--TITULO-->
     <section>
-        <!--TITULO-->
+        <br>
         <article>
             <nav class="d-flex flex-row  justify-content-center">
                 <img src="img/chapeu_74.png" alt="" height="60" width="60">
@@ -60,30 +98,44 @@
                 <img src="img/chapeu_74.png" alt="" height="60" width="60">
             </nav>
         </article>
+        <br>   
     </section>
+
+    <!--INFORMACOES-->
     <article class="card d-flex margin-10">
         <div class="margin-10">
             <section class="h-100 w-100 d-flex flex-row">
-                <!--INFORMACOES-->
                 <section>
+
                     <div class="d-flex  w-75">
+                        
                         <!--FOTO-->
                         <div class="imagem_cadastro p-1 margin-right-10">
+                            <br>
                             <div class="margin-left-4">
-                                <img src="img/logo_marca.png" height="150" width="150">
+                                <img src="img/ENVIAR FOTO.png" height="150" width="150">
                             </div>
                             <div class="p-1 ">
-                                <button class="button-theme w-150 p-1 text-center" type="submit">Anexar imagem</button>
+                                <button class="button-theme w-150 p-1 text-center" type="file">Anexar imagem</button>
                             </div>
+                            <br>
                         </div>
+
                         <!--NOME/DESC-->
                         <div>
+                            <br>
+
                             <div>
-                                <b>Título</b>
+                                <h3>CRIAÇÃO DA RECEITA</h3>
+                            </div>
+
+                            <div>
+                                <b>Título da receita</b>
                                 <div class="mb-3">
                                     <input type="text" class="text-break w-100">
                                 </div>
                             </div>
+
                             <div>
                                 <div>
                                     <b>Descrição da Receita</b>
@@ -92,42 +144,33 @@
                                     <textarea class="form-control wf-600 hpx144 " id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                     <div>
+
                         <!--PASSO-A-PASSO-->
+                        <div>
+                        <br>
+                            <h3>PASSO A PASSO</h3>
+                        </div>
+
                         <div class=" p-1 w-25">
-                            <div class="add_passos w-100 d-flex flex-row align-items-center">
-                                <h3>Passos</h3>
-                                <button onclick="newElement_Passos()" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
-                            </div>
+                            <button onclick="newElement_Passos()" 
+                            class="btn button-theme1" type="submit"><b>Criar um novo passo</b></button>
+                            <br>
+                            <br>
+
                             <!--CAMPOS-->
+                            
                             <ul id="list_passos" class="mt-2  wf-600  mb-3">
                                 <li class="d-flex align-items-center mb-3 ">
                                     <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
                                     <input type="text" class="text-break wf-600 ">
                                 </li>
-                                <li class="d-flex align-items-center mb-3 ">
-                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                                    <input type="text" class="text-break wf-600 ">
-                                </li>
-                                <li class="d-flex align-items-center mb-3 ">
-                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                                    <input type="text" class="text-break wf-600 ">
-                                </li>
-                                <li class="d-flex align-items-center mb-3 ">
-                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                                    <input type="text" class="text-break wf-600 ">
-                                </li>
-                                <li class="d-flex align-items-center mb-3 ">
-                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                                    <input type="text" class="text-break wf-600 ">
-                                </li>
-                                <li class="d-flex align-items-center mb-3 ">
-                                    <button id="remove-passo" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
-                                    <input type="text" class="text-break wf-600 ">
-                                </li>
                             </ul>
+
                             <script>
                                 // CRIAR NOVO ITEM
                                 function newElement_Passos() {
@@ -155,15 +198,23 @@
                             </script>
                         </div>
                     </div>
-
                 </section>
+
                 <!--INGREDIENTES-->
                 <aside class="cadastro_ingredientes w-25 text-start margin-top-12 margin-left-10">
                     <div class="add_ingredientes w-100 d-flex flex-row align-items-center margin-left-10">
-                        <h3>Ingredientes</h3>
-                        <button onclick="newElement_Ingredientes()" class=" btn button-theme ms-2" type="submit"><b>+</b></button>
+                    <br>
+                    <br>
+                    <br>
+                        <h3>INGREDIENTES</h3>
                     </div>
+                    <div>
+                        <button onclick="newElement_Ingredientes()" 
+                        class=" btn button-theme ms-2" type="submit"><b>Adicionar novos ingredientes</b></button>
+                    </div>
+
                     <!--CAMPOS-->
+                    <br>
                     <ul id="list_itens" class="mt-2 mb-3">
                         <li class="d-flex align-items-center mb-3">
                             <button onclick="removeElement_Ingredientes()" id="remove-ingrediente" class="btn button-theme ms-2 margin-right-4" type="submit">X</button>
@@ -190,6 +241,7 @@
                             <input type="text" class="text-break w-100 ">
                         </li>
                     </ul>
+
                     <script>
                         // NÃO CONSEGUI TERMINRAR
                         var close = document.getElementsById("remove-ingrediente");
@@ -229,14 +281,15 @@
                     </script>
                 </aside>
             </section>
-
         </div>
+
+        <!-- BOTÃO DE FINALIZAR CADASTRO -->
+        <br>
         <div class="p-1 justify-content-end d-flex flex-row">
             <button class="button-theme w-150 p-1 text-center" type="submit">Finalizar Cadastro</button>
         </div>
-    </article>
-    </section>
 
+    </article>
 </body>
 
 </html>
